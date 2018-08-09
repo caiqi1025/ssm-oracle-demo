@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+  
+<configuration>
+	<typeAliases>
+		<!-- 直接指定别名 -->
+		<typeAlias alias="user" type="com.ssm.demo.entity.User"/>
+		<!-- 通过自动扫描包定义别名 -->
+		<!-- <package name="com.ssm.demo.entity"/> -->
+	</typeAliases>
+
+</configuration>

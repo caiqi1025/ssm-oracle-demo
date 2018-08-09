@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssm.demo.entity.User">
+	<!-- 属性与字段对应映射 -->
+	<resultMap id="userResultMap" type="user" >
+        <result property="userId" column="员工编号"/>
+        <result property="userName" column="username"/>
+        <result property="password" column="username"/>
+        <result property="nickname" column="姓名"/>
+	</resultMap>
+	
+	<!-- 根据用户名查询 -->
+	<select id="queryByUserName" parameterType="string" resultMap="userResultMap">
+		select t.* from TAB_公司员工表 t where t.UserName = #{userName,jdbcType=VARCHAR}
+	</select>
+	
+	<!-- 根据主健删除 -->
+	<delete id="deleteByUserId" parameterType="int">
+		delete from TAB_公司员工表 where UserId = #{userId,jdbcType=INTEGER}
+	</delete>
+</mapper>
