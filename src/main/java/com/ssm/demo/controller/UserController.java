@@ -32,7 +32,7 @@ public class UserController {
 	
 	/**
 	 * @Title: index 
-	 * @Description: 进入首页111
+	 * @Description: 进入首页
 	 * @return 
 	 * @author Cai Qi
 	 * @date 2018年6月29日
