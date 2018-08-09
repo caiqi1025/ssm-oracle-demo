@@ -21,7 +21,7 @@ import com.ssm.demo.service.UserService;
  * @Description: 用户管理
  *
  * @author caiqi
- * @date 2018年3月19日
+ * @date 2018年8月19日
  */
 @Controller
 @RequestMapping("/user")
@@ -32,7 +32,7 @@ public class UserController {
 	
 	/**
 	 * @Title: index 
-	 * @Description: 进入首页
+	 * @Description: 进入首页111
 	 * @return 
 	 * @author Cai Qi
 	 * @date 2018年6月29日
